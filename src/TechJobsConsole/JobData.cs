@@ -50,11 +50,9 @@ namespace TechJobsConsole
                     string avalu = job[key];
                     avalu = avalu.ToLower();
 
-                    if (
-                        avalu.Contains(value)
-
-                        )
+                    if (avalu.Contains(value)&&!results.Contains(job)) 
                     {
+                     
                         results.Add(job);
                     }
                 }
